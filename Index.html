@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تواصل فيديو - منصة الفيديو الأفضل</title>
+    <meta name="description" content="اكتشف أفضل الفيديوهات العربية في مختلف المجالات على منصة تواصل فيديو. تصفح، شاهد، وشارك!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="تواصل فيديو - منصة الفيديو الأفضل">
+    <meta property="og:description" content="منصة عربية لعرض أفضل الفيديوهات التعليمية والترفيهية.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sari-abdalmoez.github.io/Twasol/">
+    <meta property="og:image" content="https://sari-abdalmoez.github.io/Twasol/cover.jpg">
+    <link rel="canonical" href="https://sari-abdalmoez.github.io/Twasol/">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: #f6f8fa;
+            font-family: 'Cairo', Tahoma, Arial, sans-serif;
+            color: #222;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(90deg, #2980b9, #6dd5fa);
+            color: #fff;
+            padding: 32px 0 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 12px 0 0 0;
+            font-size: 1.2em;
+        }
+        main {
+            max-width: 1200px;
+            margin: 32px auto;
+            padding: 0 18px;
+        }
+        .adsense {
+            margin: 24px auto;
+            max-width: 100%;
+            text-align: center;
+            min-height: 90px;
+            background: #e1ecf4;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2980b9;
+            font-size: 1.1em;
+        }
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            margin: 24px 0;
+        }
+        .video-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px #0001;
+            overflow: hidden;
+            transition: transform 0.13s;
+            border: 1px solid #eef3f7;
+        }
+        .video-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 4px 20px #0002;
+        }
+        .video-thumb {
+            width: 100%;
+            border-bottom: 1px solid #eef3f7;
+        }
+        .video-title {
+            font-size: 1.15em;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            color: #1773b0;
+        }
+        .video-meta {
+            padding: 14px 16px 12px 16px;
+        }
+        .video-desc {
+            font-size: 0.98em;
+            color: #555;
+            margin-bottom: 4px;
+        }
+        footer {
+            background: #2980b9;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0 8px;
+            margin-top: 30px;
+            font-size: 0.98em;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width:600px) {
+            header h1 { font-size: 2em; }
+            .videos-grid { gap: 15px; }
+            main { padding: 0 2vw; }
+        }
+    </style>
+    <!-- شيفرة AdSense (تستبدل لاحقًا بشيفرتك الحقيقية) -->
+    <!--
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGallery",
+      "name": "تواصل فيديو",
+      "description": "منصة عربية لمشاركة أفضل الفيديوهات.",
+      "url": "https://sari-abdalmoez.github.io/Twasol/"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>تواصل فيديو</h1>
+        <p>منصة عربية لعرض أفضل الفيديوهات التعليمية والترفيهية</p>
+    </header>
+    <main>
+        <div class="adsense">
+            <span>مساحة إعلانية (هنا يمكنك وضع كود AdSense لاحقًا)</span>
+        </div>
+        <section class="videos-grid">
+            <!-- فيديو 1 -->
+            <article class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+                <iframe class="video-thumb" width="100%" height="200" src="https://www.youtube.com/embed/BBAyRBTfsOU" title="فيديو تعليمي" frameborder="0" allowfullscreen></iframe>
+                <div class="video-meta">
+                    <div class="video-title" itemprop="name">أساسيات البرمجة بلغة بايثون</div>
+                    <div class="video-desc" itemprop="description">مقدمة شاملة لتعلم البرمجة بلغة بايثون للمبتدئين.</div>
+                </div>
+            </article>
+            <!-- فيديو 2 -->
+            <article class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+                <iframe class="video-thumb" width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="فيديو ترفيهي" frameborder="0" allowfullscreen></iframe>
+                <div class="video-meta">
+                    <div class="video-title" itemprop="name">أطرف الفيديوهات العربية</div>
+                    <div class="video-desc" itemprop="description">مجموعة مختارة من الفيديوهات المضحكة والترفيهية.</div>
+                </div>
+            </article>
+            <!-- أضف المزيد من الفيديوهات هنا -->
+        </section>
+        <div class="adsense">
+            <span>مساحة إعلانية أخرى (يمكنك وضع كود AdSense هنا)</span>
+        </div>
+    </main>
+    <footer>
+        © 2025 تواصل فيديو - جميع الحقوق محفوظة.
+    </footer>
+</body>
+</html>
