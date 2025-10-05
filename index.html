@@ -1,162 +1,145 @@
-
-/index
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>تواصل فيديو - منصة الفيديو الأفضل</title>
-    <meta name="description" content="اكتشف أفضل الفيديوهات العربية في مختلف المجالات على منصة تواصل فيديو. تصفح، شاهد، وشارك!">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="تواصل فيديو - منصة الفيديو الأفضل">
-    <meta property="og:description" content="منصة عربية لعرض أفضل الفيديوهات التعليمية والترفيهية.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sari-abdalmoez.github.io/Twasol/">
-    <meta property="og:image" content="https://sari-abdalmoez.github.io/Twasol/cover.jpg">
-    <link rel="canonical" href="https://sari-abdalmoez.github.io/Twasol/">
-    <link href="https://fonts.googleapis.com/css?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            background: #f6f8fa;
-            font-family: 'Cairo', Tahoma, Arial, sans-serif;
-            color: #222;
-            direction: rtl;
-        }
-        header {
-            background: linear-gradient(90deg, #2980b9, #6dd5fa);
-            color: #fff;
-            padding: 32px 0 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.7em;
-            letter-spacing: 1px;
-        }
-        header p {
-            margin: 12px 0 0 0;
-            font-size: 1.2em;
-        }
-        main {
-            max-width: 1200px;
-            margin: 32px auto;
-            padding: 0 18px;
-        }
-        .adsense {
-            margin: 24px auto;
-            max-width: 100%;
-            text-align: center;
-            min-height: 90px;
-            background: #e1ecf4;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #2980b9;
-            font-size: 1.1em;
-        }
-        .videos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 28px;
-            margin: 24px 0;
-        }
-        .video-card {
-            background: #fff;
-            border-radius: 14px;
-            box-shadow: 0 2px 12px #0001;
-            overflow: hidden;
-            transition: transform 0.13s;
-            border: 1px solid #eef3f7;
-        }
-        .video-card:hover {
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 4px 20px #0002;
-        }
-        .video-thumb {
-            width: 100%;
-            border-bottom: 1px solid #eef3f7;
-        }
-        .video-title {
-            font-size: 1.15em;
-            font-weight: bold;
-            margin: 0 0 6px 0;
-            color: #1773b0;
-        }
-        .video-meta {
-            padding: 14px 16px 12px 16px;
-        }
-        .video-desc {
-            font-size: 0.98em;
-            color: #555;
-            margin-bottom: 4px;
-        }
-        footer {
-            background: #2980b9;
-            color: #fff;
-            text-align: center;
-            padding: 16px 0 8px;
-            margin-top: 30px;
-            font-size: 0.98em;
-            letter-spacing: 0.5px;
-        }
-        @media (max-width:600px) {
-            header h1 { font-size: 2em; }
-            .videos-grid { gap: 15px; }
-            main { padding: 0 2vw; }
-        }
-    </style>
-    <!-- شيفرة AdSense (تستبدل لاحقًا بشيفرتك الحقيقية) -->
-    <!--
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoGallery",
-      "name": "تواصل فيديو",
-      "description": "منصة عربية لمشاركة أفضل الفيديوهات.",
-      "url": "https://sari-abdalmoez.github.io/Twasol/"
-    }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filmora - منصة عرض الأفلام</title>
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body {background:#141414;color:#fff;display:flex;flex-direction:column;min-height:100vh;}
+header {display:flex;justify-content:center;align-items:center;padding:15px 30px;background:#141414;position:fixed;top:0;width:100%;z-index:100;}
+.logo {font-size:28px;font-weight:bold;color:#e50914;}
+nav {display:flex;justify-content:center;background:#141414;padding:10px 0;margin-top:60px;}
+nav a {color:white;text-decoration:none;margin:0 20px;font-size:18px;display:flex;align-items:center;}
+nav a:hover {color:#e50914;}
+nav a i {font-size:20px;}
+.search-icon {cursor:pointer;margin-left:20px;font-size:20px;}
+.search-bar {display:none;justify-content:center;padding:10px;background:#1e1e1e;}
+.search-bar input {width:60%;padding:8px;border:none;border-radius:5px;}
+main {padding:20px;margin-top:20px;flex:1;}
+.movies-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:15px;}
+.movie-card {background:#1c1c1c;border-radius:8px;overflow:hidden;transition:transform 0.3s;cursor:pointer;}
+.movie-card:hover {transform:scale(1.05);}
+.movie-card img {width:100%;height:auto;}
+.movie-info {padding:10px;}
+.movie-info h3 {font-size:18px;margin-bottom:5px;color:white;}
+.movie-info p {font-size:14px;color:#bbb;}
+footer {text-align:center;padding:15px;background:#141414;color:#777;}
+.footer-link {display:block;margin-top:10px;color:white;text-decoration:none;font-size:16px;}
+.footer-link:hover {color:#e50914;}
+.suggestions {margin-top:30px;}
+.suggestions h2 {margin-bottom:15px;color:#e50914;}
+.suggestions-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;}
+.suggestions-card {background:#1c1c1c;border-radius:8px;overflow:hidden;cursor:pointer;}
+.suggestions-card img {width:100%;height:auto;}
+.adsense-slot {margin:20px 0;text-align:center;}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>تواصل فيديو</h1>
-        <p>منصة عربية لعرض أفضل الفيديوهات التعليمية والترفيهية</p>
-    </header>
-    <main>
-        <div class="adsense">
-            <span>مساحة إعلانية (هنا يمكنك وضع كود AdSense لاحقًا)</span>
-        </div>
-        <section class="videos-grid">
-            <!-- فيديو 1 -->
-            <article class="video-card" itemscope itemtype="https://schema.org/VideoObject">
-                <iframe class="video-thumb" width="100%" height="200" src="https://www.youtube.com/embed/BBAyRBTfsOU" title="فيديو تعليمي" frameborder="0" allowfullscreen></iframe>
-                <div class="video-meta">
-                    <div class="video-title" itemprop="name">أساسيات البرمجة بلغة بايثون</div>
-                    <div class="video-desc" itemprop="description">مقدمة شاملة لتعلم البرمجة بلغة بايثون للمبتدئين.</div>
-                </div>
-            </article>
-            <!-- فيديو 2 -->
-            <article class="video-card" itemscope itemtype="https://schema.org/VideoObject">
-                <iframe class="video-thumb" width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="فيديو ترفيهي" frameborder="0" allowfullscreen></iframe>
-                <div class="video-meta">
-                    <div class="video-title" itemprop="name">أطرف الفيديوهات العربية</div>
-                    <div class="video-desc" itemprop="description">مجموعة مختارة من الفيديوهات المضحكة والترفيهية.</div>
-                </div>
-            </article>
-            <!-- أضف المزيد من الفيديوهات هنا -->
-        </section>
-        <div class="adsense">
-            <span>مساحة إعلانية أخرى (يمكنك وضع كود AdSense هنا)</span>
-        </div>
-    </main>
-    <footer>
-        © 2025 تواصل فيديو - جميع الحقوق محفوظة.
-    </footer>
+
+<header>
+    <div class="logo">Filmora</div>
+    <div class="search-icon"><i class="fas fa-search"></i></div>
+</header>
+
+<div class="search-bar" id="searchBar">
+    <input type="text" id="searchInput" placeholder="ابحث عن فيلم...">
+</div>
+
+<nav>
+    <a href="#"><i class="fas fa-home"></i> الرئيسية</a>
+    <a href="#">أكثر مشاهدة</a>
+    <a href="#">مسلسلات</a>
+</nav>
+
+<main>
+    <div class="movies-grid" id="moviesGrid"></div>
+
+    <!-- إعلان Adsense -->
+    <div class="adsense-slot">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <div class="suggestions">
+        <h2>مقترحات لك</h2>
+        <div class="suggestions-grid" id="suggestionsGrid"></div>
+    </div>
+</main>
+
+<footer>
+    جميع الحقوق محفوظة © 2025 Filmora
+    <a href="#contact" class="footer-link">تواصل معنا</a>
+</footer>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+// بيانات افتراضية للأفلام
+const movies = [
+    {title: "الفيلم الأول", desc: "وصف قصير للفيلم الأول", img:"https://via.placeholder.com/300x450"},
+    {title: "الفيلم الثاني", desc: "وصف قصير للفيلم الثاني", img:"https://via.placeholder.com/300x450"},
+    {title: "الفيلم الثالث", desc: "وصف قصير للفيلم الثالث", img:"https://via.placeholder.com/300x450"},
+    {title: "الفيلم الرابع", desc: "وصف قصير للفيلم الرابع", img:"https://via.placeholder.com/300x450"}
+];
+
+// بيانات المقترحات
+const suggestions = [
+    "https://via.placeholder.com/150x225",
+    "https://via.placeholder.com/150x225",
+    "https://via.placeholder.com/150x225",
+    "https://via.placeholder.com/150x225"
+];
+
+const moviesGrid = document.getElementById("moviesGrid");
+const suggestionsGrid = document.getElementById("suggestionsGrid");
+
+function displayMovies(list) {
+    moviesGrid.innerHTML = "";
+    list.forEach(movie => {
+        const card = document.createElement("div");
+        card.className = "movie-card";
+        card.innerHTML = `
+            <img src="${movie.img}" alt="${movie.title}">
+            <div class="movie-info">
+                <h3>${movie.title}</h3>
+                <p>${movie.desc}</p>
+            </div>`;
+        moviesGrid.appendChild(card);
+    });
+}
+
+function displaySuggestions() {
+    suggestions.forEach(img => {
+        const card = document.createElement("div");
+        card.className = "suggestions-card";
+        card.innerHTML = `<img src="${img}" alt="اقتراح">`;
+        suggestionsGrid.appendChild(card);
+    });
+}
+
+displayMovies(movies);
+displaySuggestions();
+
+// بحث ديناميكي
+document.getElementById("searchInput").addEventListener("input", function() {
+    const query = this.value.toLowerCase();
+    const filtered = movies.filter(m => m.title.toLowerCase().includes(query));
+    displayMovies(filtered);
+});
+
+// إظهار وإخفاء البحث
+document.querySelector(".search-icon").addEventListener("click", function() {
+    const searchBar = document.getElementById("searchBar");
+    searchBar.style.display = searchBar.style.display === "flex" ? "none" : "flex";
+});
+</script>
 </body>
-      </html>
+</html>
